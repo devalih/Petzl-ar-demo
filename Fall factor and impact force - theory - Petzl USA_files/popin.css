@@ -1,0 +1,167 @@
+#colorbox {
+  z-index: 200;
+  width: 800px !important;
+  outline: none;
+  position: absolute;
+  top: 50px !important;
+  right: 50% !important;
+  margin-right: -406px;
+  background: white;
+}
+@media (orientation: portrait) {
+  html.touch #colorbox {
+    right: 80px !important;
+    left: 50px !important;
+    margin-right: 0;
+  }
+}
+@media (orientation: landscape) {
+  html.touch #colorbox {
+    margin-right: -300px;
+  }
+}
+.cboxElement {
+  outline: none;
+}
+#cboxLoadedContent {
+  width: auto !important;
+  height: auto !important;
+}
+#cboxOverlay {
+  background: black;
+  opacity: 0.7 !important;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 199;
+}
+.popin {
+  background: white;
+  position: relative;
+  min-height: 100px;
+  width: 800px;
+}
+.popin a {
+  color: #444;
+}
+.popin .cross {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url('../static/img/sprite-hd.png');
+  background-size: 124px 552px;
+  width: 23px;
+  height: 23px;
+  background-position: -62px -220px;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+}
+.popin .cross.green {
+  width: 23px;
+  height: 23px;
+  background-position: -84px -195px;
+}
+.popin .cross.yellow {
+  width: 23px;
+  height: 23px;
+  background-position: -62px -245px;
+}
+.popin .popinContent {
+  padding: 40px 40px 60px 40px;
+  width: 720px;
+}
+.popin .popinContent img {
+  width: 100%;
+}
+.popin h1 {
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-size: 24px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.popin h2 {
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-size: 24px;
+  color: #222222;
+  margin-top: 43px;
+  font-weight: normal;
+}
+.popin p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.popin ul {
+  list-style-type: none;
+}
+.popin ul li:before {
+  content: "• ";
+}
+.popin .popinSubtitle {
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-size: 16px;
+  color: #444444;
+  margin-top: 15px;
+}
+.popin .youtubeVideo {
+  margin-top: 30px;
+  position: relative;
+}
+.popin .youtubeVideo iframe {
+  width: 100%;
+}
+.popin .popinContent .bloc3Col {
+  margin-top: 20px;
+}
+.popin .popinContent .bloc3Col .col {
+  width: 220px;
+  margin-right: 25px;
+  vertical-align: top;
+}
+.popin .popinContent .bloc3Col .col:first-child {
+  margin-right: 0px;
+}
+.popin .popinFooter {
+  width: 100%;
+  height: 115px;
+  background: #f4f4f4;
+  border-top: 1px solid #bebebe;
+  position: relative;
+}
+.popin .popinFooter .popinFooterLink {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+.popin .popinFooter .popinFooterLink a {
+  font-family: 'HelveticaNeueW01-45Ligh', sans-serif;
+  font-size: 16px;
+  width: 175px;
+  text-align: left;
+  padding-left: 50px;
+  text-decoration: none;
+  color: #222222;
+  display: block;
+  position: relative;
+}
+.popin .popinFooter .popinFooterLink a .arrowOrange {
+  background-position: -168px -3px;
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  left: 0px;
+}
+/**
+ * POPIN BUY ONLINE
+ */
+.popinBuyOnline .shopsContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
